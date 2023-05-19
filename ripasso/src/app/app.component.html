@@ -1,1 +1,6 @@
-{{data|json}}
+<google-map [center]>
+    <map-marker *ngFor="let m of markers; let i = index" 
+    [position]="{'lat': m.lat, 'lng': m.lng}" [label]="'marker'" [title]=" 'ciao'"></map-marker>
+
+    
+</google-map>
